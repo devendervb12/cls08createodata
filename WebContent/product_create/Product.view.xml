@@ -1,0 +1,48 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+		controllerName="product_create.Product" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Create Product">
+		<content>
+				<f:SimpleForm id="SimpleFormChange354"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Create a Product"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="ID" />
+				<Input id="id"/>
+				<Label text="Name" />
+				<Input id="name"/>
+				<Label text="Description" />
+				<Input id="description"/>
+				<Label text="Release Date" />
+				<DatePicker id="rDate"/>
+				<Label text="Rating" />
+				<Input id="rating"/>
+				<Label text="Price" />
+				<Input id="price"/>
+				
+			</f:content>
+		</f:SimpleForm>
+		</content>
+		<footer>
+		  <Bar>
+		     <contentRight>
+		          <Button text="Create" press="onProductCreate"/>
+		     </contentRight>
+		  </Bar>
+		</footer>
+	</Page>
+</core:View>
